@@ -1,9 +1,12 @@
 pipeline{
     //Directives
-    agent any
+    agent any //
     tools {
         maven 'maven'
     }
+            triggers {
+  pollSCM '* * * * *'
+}
 
     stages {
         // Specify various stage with in stages
