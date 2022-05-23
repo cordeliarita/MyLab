@@ -48,6 +48,7 @@ pipeline{
                 }
 
             }
+        }
             
         // Stage 4 : Print some information
         stage ('Print Environment variables'){
@@ -65,4 +66,3 @@ pipeline{
         
     }
 
-}
