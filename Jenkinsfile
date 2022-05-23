@@ -4,6 +4,10 @@ pipeline{
     tools {
         maven 'maven'
     }
+               triggers {
+  pollSCM '* * * * *'
+}
+
     environment{
        ArtifactId = readMavenPom().getArtifactId()
        Version = readMavenPom().getVersion()
